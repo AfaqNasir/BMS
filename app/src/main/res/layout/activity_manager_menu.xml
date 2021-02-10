@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:weightSum="1">
+
+  <TextView
+    android:id="@+id/teller_hello"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="20dp"
+    android:text=""
+    android:textSize="@dimen/top_text"
+    android:textColor="@color/colorImportant"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginLeft="16dp" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    android:layout_marginTop="16dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <Button
+        android:id="@+id/button_auth_cus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_auth_user" />
+
+      <Button
+        android:id="@+id/button_make_cus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_make_user" />
+
+      <Button
+        android:id="@+id/button_make_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_make_account" />
+
+      <Button
+        android:id="@+id/button_give_interest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_give_interest" />
+
+      <Button
+        android:id="@+id/button_teller_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_make_deposit" />
+
+      <Button
+        android:id="@+id/button_teller_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_make_withdrawal" />
+
+      <Button
+        android:id="@+id/button_teller_check_bal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_check_balance" />
+
+      <Button
+        android:id="@+id/button_teller_list_acs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_list_accounts" />
+
+      <Button
+        android:id="@+id/button_total_bal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_total_bal" />
+
+      <Button
+        android:id="@+id/button_teller_update_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_update_info" />
+
+      <Button
+        android:id="@+id/button_deauth_cus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_logout_user" />
+
+      <Button
+        android:id="@+id/button_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/table_title_background"
+        android:text="@string/manager_message" />
+
+    </LinearLayout>
+  </ScrollView>
+
+  <Button
+    android:id="@+id/button_teller_logout"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:background="@color/table_title_background"
+    android:layout_marginBottom="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/logout"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button_make_account"
+    app:layout_constraintVertical_bias="0.0" />
+
+</LinearLayout>

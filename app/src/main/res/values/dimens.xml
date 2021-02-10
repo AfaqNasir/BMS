@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="table_title">18sp</dimen>
+  <dimen name="table_content">14sp</dimen>
+  <dimen name="message_size">20sp</dimen>
+  <dimen name="button_width">90dp</dimen>
+  <dimen name="button_height">45dp</dimen>
+  <dimen name="input_text">16sp</dimen>
+  <dimen name="top_text">18sp</dimen>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/get_deposit_amount"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/deposit_instr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/deposit_instr"
+    android:textColor="@color/colorGetInfo"
+    android:textSize="18sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/get_amount_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/get_account_id"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/deposit_instr" />
+
+  <EditText
+    android:id="@+id/account_id"
+    android:layout_width="255dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="@string/account_id_hint"
+    android:inputType="number"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/get_account_id" />
+
+  <TextView
+    android:id="@+id/textView42"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:textSize="@dimen/input_text"
+    android:text="@string/deposit_amount"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/account_id" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <EditText
+      android:id="@+id/deposit_amount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_weight="1"
+      android:ems="10"
+      android:hint="@string/deposit_amount_hint"
+      android:inputType="numberDecimal"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/get_deposit_amount" />
+
+    <Button
+      android:id="@+id/button_deposit"
+      android:layout_width="@dimen/button_width"
+      android:layout_height="@dimen/button_height"
+      android:layout_marginEnd="16dp"
+      android:text="@string/make_deposit"
+      android:background="@color/table_title_background"
+      app:layout_constraintBaseline_toBaselineOf="@+id/deposit_amount"
+      app:layout_constraintRight_toRightOf="parent" />
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/input_text"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:textColor="@color/colorImportant" />
+
+</LinearLayout>

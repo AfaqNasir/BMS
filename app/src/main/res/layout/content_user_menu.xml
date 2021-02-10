@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/hello_customer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text=""
+    android:textSize="@dimen/top_text"
+    android:textColor="@color/colorImportant" />
+
+  <TextView
+    android:id="@+id/cus_name_address"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:textColor="@color/colorImportant"
+    android:textSize="@dimen/top_text"
+    android:layout_marginTop="16dp"
+    android:text="" />
+
+  <ScrollView
+    android:id="@+id/atm_menu_accounts"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+    </LinearLayout>
+  </ScrollView>
+
+  <Button
+    android:id="@+id/button_atm_deposit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@color/table_title_background"
+    android:text="@string/user_deposit" />
+
+  <Button
+    android:id="@+id/button_atm_withdraw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/table_title_background"
+    android:text="@string/user_withdraw" />
+
+  <Button
+    android:id="@+id/button_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/table_title_background"
+    android:text="@string/user_message" />
+
+  <Button
+    android:id="@+id/button_atm_check_bal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/table_title_background"
+    android:text="@string/user_check_balance" />
+
+  <Button
+    android:id="@+id/button_atm_list_ac"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/table_title_background"
+    android:text="@string/user_list_accounts" />
+
+  <Button
+    android:id="@+id/button_atm_logout"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@color/table_title_background"
+    android:text="@string/logout" />
+
+</LinearLayout>

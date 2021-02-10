@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".project.banking.manager.ManagerGiveInterestActivity">
+
+  <TextView
+    android:id="@+id/interest_instr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/interest_instr"
+    android:textColor="@color/colorGetInfo"
+    android:textSize="18sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/get_account_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/get_account_id"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/interest_instr" />
+
+  <EditText
+    android:id="@+id/interest_account_id"
+    android:layout_width="243dp"
+    android:layout_height="42dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="@string/account_id_hint"
+    android:inputType="number"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/get_account_id"
+    app:layout_constraintRight_toLeftOf="@+id/button_give_interest"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:layout_constraintHorizontal_bias="0.17" />
+
+  <Button
+    android:id="@+id/button_give_interest"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_marginEnd="16dp"
+    android:text="@string/submit"
+    android:background="@color/table_title_background"
+    app:layout_constraintBaseline_toBaselineOf="@+id/interest_account_id"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginRight="16dp" />
+
+  <TextView
+    android:id="@+id/message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorImportant"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/interest_account_id" />
+</androidx.constraintlayout.widget.ConstraintLayout>

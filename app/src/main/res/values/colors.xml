@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#233b5d</color>
+  <color name="colorPrimaryDark">#1a2b44</color>
+  <color name="colorAccent">#8f9190</color>
+  <color name="colorGetInfo">#000000</color>
+  <color name="colorImportant">#de413a</color>
+  <color name="table_title_background">#cbcccb</color>
+  <color name="table_title">#000000</color>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".project.banking.manager.ManagerMakeUserActivity">
+
+  <TextView
+    android:id="@+id/make_cus_instr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:textSize="18sp"
+    android:text="@string/create_instr"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/cus_info_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/name"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/make_cus_instr" />
+
+  <EditText
+    android:id="@+id/cus_name"
+    android:layout_width="352dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="@string/name_hint"
+    android:inputType="textPersonName"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cus_info_name" />
+
+  <TextView
+    android:id="@+id/cus_info_age"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/age"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cus_name" />
+
+  <EditText
+    android:id="@+id/cus_age"
+    android:layout_width="352dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="@string/age_hint"
+    android:inputType="number"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cus_info_age" />
+
+  <TextView
+    android:id="@+id/cus_info_address"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/address"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cus_age" />
+
+  <EditText
+    android:id="@+id/cus_address"
+    android:layout_width="352dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="@string/address_hint"
+    android:inputType="textPersonName"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cus_info_address" />
+
+  <TextView
+    android:id="@+id/cus_info_password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/password"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cus_address" />
+
+  <EditText
+    android:id="@+id/cus_password"
+    android:layout_width="352dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="@string/pw_hint"
+    android:inputType="textPassword"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cus_info_password" />
+
+  <Button
+    android:id="@+id/button_create_customer"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:text="@string/create"
+    android:background="@color/table_title_background"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="8dp"
+    app:layout_constraintTop_toBottomOf="@+id/message" />
+
+  <TextView
+    android:id="@+id/message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text=""
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorImportant"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cus_password"
+    android:layout_marginLeft="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

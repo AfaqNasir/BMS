@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".project.banking.manager.ManagerMakeAccountActivity">
+
+  <TextView
+    android:id="@+id/create_instr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:textSize="18sp"
+    android:text="@string/create_instr"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/get_account_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/get_account_name"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/create_instr" />
+
+  <EditText
+    android:id="@+id/account_name"
+    android:layout_width="352dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="@string/account_name_hint"
+    android:inputType="textPersonName"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/get_account_name" />
+
+  <TextView
+    android:id="@+id/get_account_balance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/get_account_balance"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/account_name" />
+
+  <EditText
+    android:id="@+id/account_balance"
+    android:layout_width="352dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="@string/account_balance_hint"
+    android:inputType="numberDecimal"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/get_account_balance" />
+
+  <TextView
+    android:id="@+id/get_account_type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/get_account_type"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/account_balance" />
+
+  <Spinner
+    android:id="@+id/account_types"
+    android:layout_width="352dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/get_account_type" />
+
+  <TextView
+    android:id="@+id/message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text=""
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorImportant"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/account_types"
+    android:layout_marginLeft="16dp" />
+
+  <Button
+    android:id="@+id/button_create"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:text="@string/create"
+    android:background="@color/table_title_background"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintTop_toBottomOf="@+id/message"
+    android:layout_marginLeft="8dp"
+    app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

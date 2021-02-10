@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/any_msg_instr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/view_any_msg_instr"
+    android:textColor="@color/colorGetInfo"
+    android:textSize="18sp" />
+
+  <TextView
+    android:id="@+id/get_message_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/get_msd_id"
+    android:textColor="@color/colorGetInfo" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+      android:id="@+id/message_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_weight="1"
+      android:ems="10"
+      android:hint="@string/msg_id_hint"
+      android:inputType="number" />
+
+    <Button
+      android:id="@+id/button_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_weight="1"
+      android:text="@string/view_msg" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:textColor="@color/colorImportant" />
+</LinearLayout>

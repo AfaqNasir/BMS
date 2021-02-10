@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/admin_promot_instr"
+    android:layout_width="356dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/promote_instr"
+    android:textColor="@color/colorGetInfo"
+    android:textSize="18sp" />
+
+  <TextView
+    android:id="@+id/get_teller_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/manager_id"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorGetInfo" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+      android:id="@+id/teller_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_weight="1"
+      android:ems="10"
+      android:hint="@string/manager_id_hint"
+      android:inputType="number" />
+
+    <Button
+      android:id="@+id/button_promote"
+      android:layout_width="@dimen/button_width"
+      android:layout_height="@dimen/button_height"
+      android:layout_weight="1"
+      android:layout_marginEnd="16dp"
+      android:background="@color/table_title_background"
+      android:text="@string/promote_button" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:textSize="@dimen/input_text"
+    android:textColor="@color/colorImportant" />
+
+</LinearLayout>

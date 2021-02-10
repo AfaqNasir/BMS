@@ -1,0 +1,236 @@
+<resources>
+  <string name="app_name">BMS</string>
+  <string name="full_name">Banking Management System</string>
+  <string name="get_id">User ID:</string>
+  <string name="get_pw">Password:</string>
+  <string name="login">Log In</string>
+  <string name="userid_hint">User ID</string>
+  <string name="logout">Log Out</string>
+  <string name="logo_description">This is the logo of BMS bank.</string>
+  <string name="null_field">Please enter both User ID and password.</string>
+  <string name="invalid_userid">User ID does not exist.</string>
+  <string name="forget_password">Forget password</string>
+
+  // forget password
+  <string name="forget_pw_instr">Enter your user ID, name and address for verification,
+    and your new password.</string>
+  <string name="get_new_pw">New password:</string>
+  <string name="new_password_hint">New password</string>
+  <string name="not_match_into">Information does not match</string>
+  <string name="get_confirm_pw">Confirm password:</string>
+  <string name="confirm_pw">Confirm password</string>
+  <string name="password_not_match">Passwords do not match</string>
+
+  // Admin Menu
+  <string name="welcome_admin">Hello! Admin</string>
+  <string name="admin_menu">Admin Terminal</string>
+  <string name="make_admin">Create an admin</string>
+  <string name="make_manager">Create a Manager</string>
+  <string name="check_admins">View all admins</string>
+  <string name="check_managers">View all Managers</string>
+  <string name="check_user">View all Users</string>
+  <string name="admin_view_total_bal">View users\'s total balance</string>
+  <string name="admin_view_total_money">View bank\'s total balance</string>
+  <string name="admin_promote_manager">Promote a manager to admin</string>
+  <string name="admin_message">Message</string>
+
+  //  Manager Menu
+  <string name="welcome_manager">Hello! Manager</string>
+  <string name="manager_menu">manager Terminal</string>
+  <string name="manager_auth_user">Authenticate new user</string>
+  <string name="manager_make_user">Make a new user</string>
+  <string name="manager_make_account">Make a new account</string>
+  <string name="manager_give_interest">Give interest</string>
+  <string name="manager_make_deposit">Make a deposit</string>
+  <string name="manager_make_withdrawal">Make a withdrawal</string>
+  <string name="manager_check_balance">Check balance of an account</string>
+  <string name="manager_list_accounts">List all accounts</string>
+  <string name="manager_total_bal">View total balance</string>
+  <string name="manager_update_info">Update user information</string>
+  <string name="manager_logout_user">Close user session</string>
+  <string name="manager_message">Message</string>
+
+  // User Menu
+  <string name="welcome_user">Hello! user</string>
+  <string name="user_menu">user</string>
+  <string name="user_list_accounts">List accounts and balance</string>
+  <string name="user_deposit">Make deposit</string>
+  <string name="user_withdraw">Make withdrawal</string>
+  <string name="user_check_balance">Check balance of an account</string>
+  <string name="user_message">View messages</string>
+  <string name="view_message">View message</string>
+
+  // Admin: make new admin/Manager
+  <string name="new_admin">Create a new admin</string>
+  <string name="new_manager">Create a new manager</string>
+  <string name="create_instr">Enter the following information.</string>
+  <string name="name">Name:</string>
+  <string name="age">Age:</string>
+  <string name="address">Address:</string>
+  <string name="password">Password:</string>
+  <string name="create">Create</string>
+  <string name="name_hint">Name</string>
+  <string name="age_hint">Age</string>
+  <string name="address_hint">Address</string>
+  <string name="pw_hint">Password</string>
+  <string name="admin_created">Admin created. New admin ID is: </string>
+  <string name="manager_created">manager created. New manager ID is: </string>
+  <string name="null_info">Please do not leave the fields blank.</string>
+  <string name="admin_create_failed">Admin cannot be created.</string>
+  <string name="manager_create_failed">manager cannot be created.</string>
+
+  Manager: make new user
+  <string name="user_created">User created.</string>
+  <string name="user_create_failed">User cannot be created.</string>
+  <string name="new_user_id">New user ID is </string>
+
+  // Admin: list admins/Managers/User
+  <string name="admin_list">List of admins</string>
+  <string name="manager_list">List of managers</string>
+  <string name="user_list">List of user</string>
+  <string name="list_id">User ID</string>
+  <string name="list_name">Name</string>
+
+  // Manager: auth user
+  <string name="auth_user_instr">Please enter user ID and password.</string>
+  <string name="user_authenticated">user authenticated.</string>
+  <string name="incorrect_password">Incorrect password.</string>
+  <string name="not_user">User is not a user.</string>
+  <string name="existing">Another user is currently being served.</string>
+
+  // Manager: make new account
+  <string name="get_account_name">Account name:</string>
+  <string name="get_account_balance">Account balance:</string>
+  <string name="get_account_type">Account type:</string>
+  <string name="account_name_hint">Account name</string>
+  <string name="account_balance_hint">Balance</string>
+  <string name="account_type">Account type</string>
+  <string-array name="types_array">
+    <item>CHEQUING</item>
+    <item>SAVING</item>
+    <item>CURRENTACCOUNT</item>
+    <item>RESTRICTED SAVING</item>
+    <item>BALANCE OWING</item>
+  </string-array>
+  <string name="account_created">Account created.</string>
+  <string name="account_create_failed">Account cannot be created.</string>
+  <string name="new_account_id">New account ID is </string>
+  <string name="savings_balance">Balance cannot be less than $1000.</string>
+
+  // Manager: give interest
+  <string name="interest_instr">Enter account ID to give interest to:</string>
+  <string name="get_account_id">Account ID:</string>
+  <string name="account_id_hint">Account ID</string>
+  <string name="submit">Submit</string>
+  <string name="fail_interest">Interest cannot be added.</string>
+
+  // Manager: deposit
+  <string name="deposit_instr">Enter account ID and amount to make deposit:</string>
+  <string name="deposit_amount">Deposit amount:</string>
+  <string name="deposit_amount_hint">Deposit amount</string>
+  <string name="make_deposit">Deposit</string>
+
+  // Manager: withdraw
+  <string name="withdraw_instr">Enter account ID and amount to make withdrawal:</string>
+  <string name="withdraw_amount">Withdraw amount:</string>
+  <string name="withdraw_amount_hint">Withdraw amount</string>
+  <string name="make_withdrawal">Withdraw</string>
+  <string name="saving_chequing">Success.\n Account has been converted to a chequing account.</string>
+
+  // Admin/Manager: view message
+  <string name="view_own_msg">View your messages</string>
+  <string name="view_your_user_msg">View user\'s messages</string>
+  <string name="leave_msg">Leave a message</string>
+  <string name="view_any_msg">View all messages</string>
+  <string name="no_current_user">There is no current user right now.</string>
+  <string name="message_owner">Messages for</string>
+  <string name="message_owner_all">All messages:</string>
+  <string name="message">Message:</string>
+  <string name="all_messages">All messages</string>
+
+  // User/Manager: check balance
+  <string name="check_bal_instr">Enter account ID to check balance:</string>
+  <string name="check">Check</string>
+  <string name="existed_bal_msg">The balance of this account is: $</string>
+  <string name="not_existed_bal_msg">There is no such account for this user.</string>
+  <string name="check_bal_label">Check balance</string>
+
+  // Manager: list all accounts
+  <string name="account_list">Account list</string>
+  <string name="list_account_type">Type</string>
+  <string name="list_account_name">Name</string>
+  <string name="list_account_balance">Balance</string>
+
+  // Manager: update user information
+  <string name="update_instr">Enter new information to update.</string>
+  <string name="update">Update</string>
+  <string name="new_name">New name:</string>
+  <string name="new_age">New age:</string>
+  <string name="new_address">New address:</string>
+  <string name="new_password">New password:</string>
+  <string name="msg_name_updated">Name is updated.</string>
+  <string name="msg_age_updated">Age is updated.</string>
+  <string name="msg_address_updated">Address is updated.</string>
+  <string name="msg_password_updated">Password is updated.</string>
+  <string name="msg_update_fail">Failed to update.</string>
+  <string name="address_long">Address is should be at most 100 characters.</string>
+
+  // Manager: deauthenticate user
+  <string name="msg_deauthenticated">User session is closed.</string>
+
+  // User: list accounts
+  <string name="user_account_list">Account list</string>
+  <string name="account_owner">Accounts for</string>
+  <string name="account_id">Account ID is</string>
+
+  // User: do deposit/withdraw
+  <string name="success">Success.</string>
+  <string name="fail_deposit">Deposit cannot be done.</string>
+  <string name="fail_withdraw">Withdrawal cannot be done.</string>
+  <string name="insufficient_funds">Insufficient funds for withdrawal.</string>
+  <string name="positive_balance">Balance must not be positive.</string>
+  <string name="restrict_saving">User cannot withdraw from this account.</string>
+
+  // User: view total balance
+  <string name="check_total_bal_instr">Enter the User ID to check total balance.</string>
+  <string name="get_user_id">User ID:</string>
+  <string name="checked_total_msg">The user\'s total balance is: $</string>
+  <string name="checked_fail_msg">There is no such user.</string>
+  <string name="check_no_account">user has no accounts.</string>
+
+  // User: view total money in bank
+  <string name="check_total_money_in_bank">The total balance of the bank is $</string>
+
+  // Admin: promote manager
+  <string name="promote_instr">Enter the ID of the manager you would like to promote.</string>
+  <string name="manager_id">Manager ID:</string>
+  <string name="manager_id_hint">Manager ID</string>
+  <string name="promote">Promote a Manager</string>
+  <string name="promote_button">Promote</string>
+  <string name="promote_success">Manager promoted</string>
+  <string name="promote_fail">Fail to promote.</string>
+
+  // Admin: view any messages
+  <string name="view_any_msg_instr">Enter the ID of the message you would like to view:</string>
+  <string name="get_msd_id">Message ID: </string>
+  <string name="msg_id_hint">Message ID</string>
+  <string name="fail_message">No such message ID.</string>
+  <string name="view_msg">View</string>
+  <string name="null_message_id">Please enter message ID.</string>
+
+  // Admin/Manager: leave message
+  <string name="get_message_content">Message:</string>
+  <string name="message_content_hint">Message</string>
+  <string name="send_message">send</string>
+  <string name="success_sent">Message is sent.</string>
+  <string name="fail_sent">Message cannot be sent.</string>
+  <string name="leave_msg_instr">Enter the user ID and message you would like to send:</string>
+  <string name="null_userid">Please enter user ID.</string>
+  <string name="userid_is_not_avaliable">You cannot leave messages to Manager or admin.</string>
+  <string name="message_long">Message cannot be longer than 512 characters.</string>
+
+  // generic messages
+  <string name="convert1">Your savings account with id</string>
+  <string name="convert2">has been converted to a chequing account.</string>
+
+</resources>

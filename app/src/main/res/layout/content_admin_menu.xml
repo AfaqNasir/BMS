@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:weightSum="1">
+
+  <TextView
+    android:id="@+id/admin_welcome"
+    android:layout_width="323dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="20dp"
+    android:text="@string/welcome_admin"
+    android:textSize="@dimen/top_text"
+    android:textColor="@color/colorImportant"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="430dp"
+      android:layout_marginTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <Button
+          android:id="@+id/button_admin_list_teller"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/check_managers"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/button_admin_list_admin" />
+
+      <Button
+          android:id="@+id/button_admin_list_cus"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/check_user"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/button_admin_list_teller" />
+
+      <Button
+          android:id="@+id/button_admin_list_admin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/check_admins"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/button_admin_new_teller" />
+
+      <Button
+          android:id="@+id/button_admin_new_ad"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/make_admin"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <Button
+          android:id="@+id/button_admin_new_teller"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/make_manager"
+          app:layout_constraintHorizontal_bias="0.504"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/button_admin_new_ad" />
+
+      <Button
+          android:id="@+id/button_admin_view_total_bal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/admin_view_total_bal" />
+
+      <Button
+          android:id="@+id/button_admin_view_total_money"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/admin_view_total_money" />
+
+      <Button
+          android:id="@+id/button_admin_promote"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/admin_promote_manager" />
+
+      <Button
+          android:id="@+id/button_message"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@color/table_title_background"
+          android:text="@string/admin_message" />
+    </LinearLayout>
+  </ScrollView>
+
+  <Button
+    android:id="@+id/button_admin_logout"
+    android:layout_width="@dimen/button_width"
+    android:layout_height="@dimen/button_height"
+    android:layout_marginBottom="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="24dp"
+    android:text="@string/logout"
+    android:background="@color/table_title_background"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button_admin_list_cus"
+    app:layout_constraintVertical_bias="0.0" />
+
+</LinearLayout>

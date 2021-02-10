@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oritechs.BMS">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.oritechs.BMS.project.banking.MainActivity"
+            android:noHistory="true"
+            android:label="@string/full_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminMenuActivity"
+            android:label="@string/admin_menu" />
+        <activity
+            android:name=".project.banking.manager.ManagerMenuActivity"
+            android:label="@string/manager_menu" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.user.UserMenuActivity"
+            android:label="@string/user_menu" />
+
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.NewAdminInfoActivity"
+            android:label="@string/new_admin" />
+        <activity
+            android:name=".project.banking.admin.NewManagerActivity"
+            android:label="@string/new_manager" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminListActivity"
+            android:label="@string/admin_list" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.ManagerListActivity"
+            android:label="@string/manager_list" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.CustomerListActivity"
+            android:label="@string/user_list" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminMainMessageActivity"
+            android:label="@string/admin_message" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminViewTotalBalanceActivity"
+            android:label="@string/admin_view_total_bal" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminBankTotalMoneyActivity"
+            android:label="@string/admin_view_total_money" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminPromoteActivity"
+            android:label="@string/promote" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminMessageActivity"
+            android:label="@string/view_own_msg" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminAnyMessageActivity"
+            android:label="@string/view_any_msg" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminLeaveMessageActivity"
+            android:label="@string/leave_msg" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.admin.AdminViewMessageActivity"
+            android:label="@string/view_message" />
+        // inside teller menu
+        <activity
+            android:name="com.oritechs.BMS.project.banking.manager.ManagerAuthCustomerActivity"
+            android:label="@string/manager_auth_user" />
+        <activity
+            android:name=".project.banking.manager.ManagerMakeUserActivity"
+            android:label="@string/manager_make_user" />
+        <activity
+            android:name=".project.banking.manager.ManagerMakeAccountActivity"
+            android:label="@string/manager_make_account" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.manager.ManagerGiveInterestActivity"
+            android:label="@string/manager_give_interest" />
+        <activity
+            android:name=".project.banking.manager.ManagerDepositActivity"
+            android:label="@string/manager_make_deposit" />
+        <activity
+            android:name=".project.banking.manager.ManagerWithdrawActivity"
+            android:label="@string/manager_make_withdrawal" />
+        <activity
+            android:name=".project.banking.manager.ManagerCheckBalanceActivity"
+            android:label="@string/manager_check_balance" />
+        <activity
+            android:name=".project.banking.manager.ManagerListAccountsActivity"
+            android:label="@string/account_list" />
+        <activity
+            android:name=".project.banking.manager.ManagerViewTotalBalanceActivity"
+            android:label="@string/manager_total_bal" />
+        <activity
+            android:name=".project.banking.manager.ManagerUpdateCustomerInfoActivity"
+            android:label="@string/manager_update_info" />
+        <activity
+            android:name=".project.banking.manager.ManagerMainMessageActivity"
+            android:label="@string/manager_message" />
+        <activity
+            android:name=".project.banking.manager.ManagerLeaveMessageActivity"
+            android:label="@string/leave_msg" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.manager.ManagerViewCustomerMessageActivity"
+            android:label="@string/view_your_user_msg" />
+        <activity
+            android:name=".project.banking.manager.ManagerViewItsMessagesActivity"
+            android:label="@string/view_own_msg" />
+        <activity
+            android:name=".project.banking.manager.ManagerViewMessageActivity"
+            android:label="@string/view_message" />
+        // inside atm menu
+        <activity
+            android:name=".project.banking.user.UserListAccountsActivity"
+            android:label="@string/user_account_list" />
+        <activity
+            android:name=".project.banking.user.UserDepositActivity"
+            android:label="@string/user_deposit" />
+        <activity
+            android:name=".project.banking.user.UserWithdrawActivity"
+            android:label="@string/user_withdraw" />
+        <activity
+            android:name=".project.banking.user.UserCheckBalanceActivity"
+            android:label="@string/check_bal_label" />
+        <activity
+            android:name=".project.banking.user.UserMainMessageActivity"
+            android:label="@string/user_message" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.user.UserViewMessageActivity"
+            android:label="@string/view_message" />
+        <activity
+            android:name="com.oritechs.BMS.project.banking.ForgetPasswordActivity"
+            android:label="@string/forget_password"/>
+    </application>
+</manifest>
