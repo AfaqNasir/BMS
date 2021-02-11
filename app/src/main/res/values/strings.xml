@@ -34,7 +34,7 @@
   <string name="admin_promote_manager">Promote a manager to admin</string>
   <string name="admin_message">Message</string>
 
-  //  Manager Menu
+  // Manager Menu
   <string name="welcome_manager">Hello! Manager</string>
   <string name="manager_menu">manager Terminal</string>
   <string name="manager_auth_user">Authenticate new user</string>
@@ -56,8 +56,9 @@
   <string name="user_list_accounts">List accounts and balance</string>
   <string name="user_deposit">Make deposit</string>
   <string name="user_withdraw">Make withdrawal</string>
-  <string name="user_check_balance">Check balance of an account</string>
-  <string name="user_message">View messages</string>
+  <string name="send_money">Send Money</string>
+  <string name="user_check_balance">Check Total Balance</string>
+  <string name="user_message">View Notification</string>
   <string name="view_message">View message</string>
 
   // Admin: make new admin/Manager
@@ -131,6 +132,7 @@
   <string name="make_deposit">Deposit</string>
 
   // Manager: withdraw
+  <string name="send_money_ins">Enter account ID of sender and resever and amount to make Transsection:</string>
   <string name="withdraw_instr">Enter account ID and amount to make withdrawal:</string>
   <string name="withdraw_amount">Withdraw amount:</string>
   <string name="withdraw_amount_hint">Withdraw amount</string>
@@ -232,5 +234,9 @@
   // generic messages
   <string name="convert1">Your savings account with id</string>
   <string name="convert2">has been converted to a chequing account.</string>
+  <string name="pay_bill">Pay Bill</string>
+  <string name="enter_sender_account">Enter Sender Account</string>
+  <string name="enter_recever_account">Enter Recever Account</string>
+  <string name="enter_amount">Enter Amount</string>
 
 </resources>
