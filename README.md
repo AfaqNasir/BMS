@@ -4,7 +4,7 @@ This is our final Semester Project Of
 
 ## Mobile Application Development Course
 
-+ Muhammad Afaq Nasir (F2017266353)
++ Muhammad Afaq Nasir
 
 ## Regards: Sir Rana Waqas
 
