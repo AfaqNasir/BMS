@@ -1,6 +1,10 @@
 # BMS (Banking Management Syatem)
-This is our final semester project
+
+This is our final Semester Project Of 
+
+## Mobile Application Development Course
 
 + Muhammad Afaq Nasir (F2017266353)
-+ Hafiz Muhammad Haris (F2017266324)
-+ Muhammad Bilal (F2017266192)
+
+- University of Management & Technology
+## Regards: Sir Rana Waqas
